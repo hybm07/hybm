@@ -26,6 +26,7 @@ driver.find_element_by_id('js_login').click()
 driver.implicitly_wait(2)
 driver.find_element_by_class_name('btns-enter-qq').click()
 
+#进入到HTML页面里面的iframe窗口
 driver.switch_to.frame('login_frame_qq')
 driver.find_element_by_id('switcher_plogin').click()
 driver.find_element_by_id('u').send_keys('361246837')
