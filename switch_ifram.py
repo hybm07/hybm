@@ -29,8 +29,9 @@ driver.find_element_by_class_name('btns-enter-qq').click()
 #进入到HTML页面里面的iframe窗口
 driver.switch_to.frame('login_frame_qq')
 driver.find_element_by_id('switcher_plogin').click()
-driver.find_element_by_id('u').send_keys('361246837')
-driver.find_element_by_id('p').send_keys('xqXQ361246!')
+#请输入自己的账号和密码
+driver.find_element_by_id('u').send_keys('**账号**')
+driver.find_element_by_id('p').send_keys('**密码**')
 driver.find_element_by_id('login_button').click()
 
 driver.quit()
